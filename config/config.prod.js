@@ -8,7 +8,7 @@ module.exports = (appInfo) => {
     // 数据库连接
     mongoose: {
       client: {
-        url: 'mongodb://127.0.0.1:27017/doracms2',
+        url: 'mongodb://doramart:doramart@127.0.0.1:27017/doracms2',
         options: {
           useCreateIndex: true,
           useUnifiedTopology: true,
@@ -36,7 +36,7 @@ module.exports = (appInfo) => {
       dir: '/home/doraData/logsdir/doracms',
     },
     // 服务地址配置
-    server_path: 'https://www.html-js.cn',
-    server_api: 'https://www.html-js.cn/api',
+    server_path: 'http://101.33.245.249',
+    server_api: 'http://101.33.245.249/api',
   };;
 };
