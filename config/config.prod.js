@@ -18,17 +18,13 @@ module.exports = (appInfo) => {
     },
     // mongodb相关路径
     mongodb: {
-      binPath: 'D:/DatabaseSoftware/mongoDB4.4/bin',
+      binPath: '/www/server/mongodb/bin/',
       backUpPath: '/home/database/doracms/',
     },
     // 静态目录
     static: {
       prefix: '/static',
-      dir: [
-        path.join(appInfo.baseDir, 'app/public'),
-        path.join(appInfo.baseDir, 'backstage/dist'),
-        '/home/doraData/uploadFiles/static',
-      ],
+      dir: [path.join(appInfo.baseDir, 'app/public'), '/home/doraData/uploadFiles/static'],
       maxAge: 31536000,
     },
     // 日志路径
@@ -36,7 +32,7 @@ module.exports = (appInfo) => {
       dir: '/home/doraData/logsdir/doracms',
     },
     // 服务地址配置
-    server_path: 'http://101.33.245.249',
-    server_api: 'http://101.33.245.249/api',
-  };;
+    server_path: 'http://101.33.245.249:8080',
+    server_api: 'http://101.33.245.249:8080/api',
+  };
 };

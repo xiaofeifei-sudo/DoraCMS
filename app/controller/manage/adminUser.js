@@ -412,6 +412,7 @@ class AdminUserController extends Controller {
 
       for (const pathItem of powerPathMaps) {
         if (this.app.config.env === 'local') {
+
           // 读取本地文件获取调试端口号
           const admin_micro_path = path.join(
             this.app.config.baseDir,
